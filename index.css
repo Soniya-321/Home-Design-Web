@@ -1,0 +1,306 @@
+/* General Styling */
+body {
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+}
+
+/* Login Page Styling */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-btn {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Home Page Styling */
+.home-container {
+    display: none;
+    padding-top: 50px;
+    background-image: url('https://www.home-designing.com/wp-content/uploads/2022/11/open-plan-living-room.jpg');
+    height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+}
+
+/* Checkbox Logic to Toggle Login and Home Pages */
+.toggle:checked~.login-container {
+    display: none;
+}
+
+.toggle:checked~.home-container {
+    display: block;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: transparent;
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {}
+
+.logo {
+    margin: 0px;
+}
+
+.logo-img {
+    height: 2rem;
+    width: 4.4rem;
+    margin: 0px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin-right: 5px;
+    padding: 0;
+
+}
+
+.navbar ul li {
+    /* margin-left: 20px; */
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.navbar ul li a {
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 0px;
+    font-family: roboto;
+}
+
+.navbar ul li a:hover {
+    background-color: none;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: solid 2px #660f7e;
+}
+
+/* Section Styling */
+.content {
+    padding: 30px 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-home {
+    padding: 30px 20px;
+    text-align: center;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-home h2 {
+    color: #660f7e;
+    margin-bottom: 0px;
+    font-size: 17px;
+}
+
+.content-home p {
+    color: #F0F8FF;
+    font-size: 14px;
+    text-align: center;
+}
+
+.know-more-bnt {
+    padding: 8px 18px;
+    font-size: 12px;
+    background-color: #660f7e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+#bedroom-section {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjswpVZ_51eqdRml5JbCmMX4gA4iIocdMgh63N8O4czkBxU8IUFtA0CUtvgRgJFlNYdOQ&usqp=CAU');
+    background-size: cover;
+}
+
+#kitchen-section {
+    background-image: url('https://img.freepik.com/premium-photo/soft-light-gray-color-splash-gradient-background_811396-83306.jpg');
+    background-size: cover;
+}
+
+#dining-section {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg_Bev4NJU77CE7Rf9oSbGJBiUGmyYEo1Nu2DsQKs6UAgqlSSjmLW3WJ1PTm6vzDHQj5I&usqp=CAU');
+    background-size: cover;
+}
+
+#backyard-section {
+    background-image: url('https://e0.pxfuel.com/wallpapers/303/286/desktop-wallpaper-grey-background-pics-simple-light.jpg');
+    background-size: cover;
+}
+
+.content h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #660f7e;
+}
+
+.content p {
+    font-size: 13px;
+    color: #2F4F4F;
+}
+
+.section-img {
+    height: 180px;
+    width: 180px;
+}
+
+@media screen and (min-width: 576px) {
+    .navbar ul li {
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo-img {
+        height: 3.5rem;
+        width: 8rem;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 17px;
+    }
+
+    .content-home h2 {
+        font-size: 20px;
+    }
+
+    .content-home p {
+        font-size: 17px;
+    }
+
+    .know-more-bnt {
+        font-size: 16px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 17px;
+    }
+
+    .navbar ul li a:hover {
+        background-color: none;
+        border-right: 0;
+        border-left: 0;
+        border-top: 0;
+        padding-bottom: 5px;
+        border-bottom: solid 3px #660f7e;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .logo-img {
+        height: 5rem;
+        width: 11rem;
+    }
+
+    .navbar ul li a {
+        font-size: 24px;
+    }
+
+    .navbar ul li {
+        padding: 0px 15px;
+    }
+
+    .content-home h2 {
+        font-size: 30px;
+    }
+
+    .content-home p {
+        font-size: 25px;
+        margin: 10px 60px;
+    }
+
+    .know-more-bnt {
+        font-size: 25px;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 25px;
+    }
+
+    .section-img {
+        height: 350px;
+        width: 350px;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Design</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Hidden checkbox for toggling login and home pages -->
+    <input type="checkbox" id="login-toggle" class="toggle" hidden>
+
+    <!-- Login Page -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Login button that toggles to home page -->
+            <label for="login-toggle" class="login-btn">Login</label>
+        </form>
+    </div>
+
+    <!-- Home Page -->
+    <div class="home-container">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/dzsrw1tcr/image/upload/v1729782270/Screenshot_2024-10-24_203302-removebg-preview_cedccn.png" class="logo-img" />
+            </div>
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a href="#bedroom-section">Bedroom</a></li>
+                <li><a href="#kitchen-section">Kitchen</a></li>
+                <li><a href="#dining-section">Dining</a></li>
+                <li><a href="#backyard-section">Backyard</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sections corresponding to each nav item -->
+        <section id="home-section" class="content-home">
+            <h2>DESIGN YOUR HOUSE</h2>
+            <p>Welcome to my cozy haven, where every corner is designed with warmth, comfort, and style to create a home filled with cherished memories.</p>
+            <button class="know-more-bnt">Know More</button>
+        </section>
+        <section id="bedroom-section" class="content">
+            <div class="image-container">
+                <img src="https://watermark.lovepik.com/photo/20211122/large/lovepik-new-chinese-style-simple-bedroom-interior-design-picture_500693664.jpg" alt="Bedroom" class="section-img">
+            </div>
+            <div class="text-container">
+                <h2>Bedroom Design</h2>
+                <p>Elegant and cozy bedroom designs for relaxation.</p>
+            </div>
+        </section>
+
+        <section id="kitchen-section" class="content">
+            <div class="image-container" style="order: 1">
+                <img src="https://images.pexels.com/photos/4030908/pexels-photo-4030908.jpeg?cs=srgb&dl=pexels-quirva-4030908.jpg&fm=jpg" alt="Kitchen" class="section-img">
+            </div>
+            <div class="text-container">
+                <h2>Kitchen Design</h2>
+                <p>Functional and modern kitchen spaces.</p>
+            </div>
+        </section>
+
+        <section id="dining-section" class="content">
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1505409628601-edc9af17fda6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGluaW5nJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D" alt="Dining" class="section-img">
+            </div>
+            <div class="text-container">
+                <h2>Dining Room Design</h2>
+                <p>Perfect dining areas for gatherings.</p>
+            </div>
+        </section>
+
+        <section id="backyard-section" class="content">
+            <div class="image-container" style="order: 1">
+                <img src="https://cdn.mos.cms.futurecdn.net/joucBck74LVepGdWG5cXSn.gif" alt="Backyard" class="section-img">
+            </div>
+            <div class="text-container">
+                <h2>Backyard Design</h2>
+                <p>Beautiful outdoor spaces for relaxation and entertainment.</p>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
+
